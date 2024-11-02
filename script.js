@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const btnSignIn = document.getElementById ("btn-sign-in");
 const btnSignUp = document.getElementById ("btn-sign-up");
-/*const fallingLeaves = document.getElementById ('falling-leaves')*/
+const fallingLeaves = document.getElementById ('falling-leaves')
 btnSignIn.addEventListener("click", ()=>{
     container.classList.remove ("toggle");
 })
@@ -9,7 +9,7 @@ btnSignUp.addEventListener("click", ()=>{
     container.classList.add ("toggle");
 
 })
-/*function createLeaf() {
+function createLeaf() {
     const leaf = document.createElement('div');
     leaf.className = 'leaf';
 
@@ -34,4 +34,4 @@ btnSignUp.addEventListener("click", ()=>{
 }
 
 // Llama a la función createLeaf cada cierto tiempo para generar más hojas
-setInterval(createLeaf, 300);*/
+setInterval(createLeaf, 300);
