@@ -460,6 +460,125 @@ body, html{
   border: 7px solid transparent;
   border-right: 7px solid #01579B;
 }
+.inventario{
+	width: 50%;
+	border: 2px solid grey;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 2em;
+	background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde delgado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+}
+.inventario .inventario-block{
+	display: grid;
+	text-align: center;
+    grid-template-columns: 50% 30%; /* Dos columnas: label e input */
+    gap: 5px; /* Espaciado entre elementos */
+    align-items: center; /* Alinea verticalmente */
+	margin-top: 2%;
+	margin-bottom: 2em;
+}
+.inventario .inventario-block label{
+	font-family: 'Arial', sans-serif; /* Fuente elegante y legible */
+	font-size: 14px; /* Tamaño de fuente */
+	font-weight: bold; /* Negrita para destacar */
+	color: #555; /* Color del texto */
+	display: block; /* Asegura que el label esté en una línea separada */
+	margin-bottom: 8px; /* Espaciado entre el label y el input */
+	text-transform: uppercase; /* Convierte el texto a mayúsculas */
+	letter-spacing: 1px; /* Espaciado entre letras para elegancia */
+}
+.inventario .inventario-block input{
+  	padding: 8px; /* Espaciado interno */
+	border: 1px solid #ccc; /* Borde sutil */
+	border-radius: 5px; /* Bordes redondeados */
+	font-size: 14px; /* Tamaño del texto */
+	color: #333; /* Color del texto */
+	box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+.inventario .inventario-block input:focus{
+	border-color: #007bff; /* Cambia el color del borde al enfocarse */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Resalta el input */
+	outline: none; /* Quita el contorno predeterminado del navegador */
+}
+.externo-button {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 2em;
+}
+.btn-guardar {
+	text-align: center;
+	background-color: #007bff; /* Color de fondo */
+	color: #FFF; /* Color del texto */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	padding: 10px 20px; /* Espaciado interno */
+	font-size: 16px; /* Tamaño de fuente */
+	font-family: 'Arial', sans-serif; /* Fuente legible */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+	transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+.btn-guardar:hover {
+	background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+	box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+.btn-guardar:active{
+	background-color: #004080; /* Color aún más oscuro al hacer clic */
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+	transform: scale(0.98); /* Botón ligeramente más pequeño */
+}
+.btn-registrar {
+	text-align: center;
+	background-color: #dc3545; /* Rojo para cancelar */
+	color: #fff; /* Color del texto */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	padding: 10px 20px; /* Espaciado interno */
+	font-size: 16px; /* Tamaño de fuente */
+	font-family: 'Arial', sans-serif; /* Fuente legible */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+	transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+.btn-registrar:hover {
+	background-color: #a71d2a; /* Rojo más oscuro */
+	box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+.btn-registrar:active{
+	background-color: #8f1c24; /* Color aún más oscuro al hacer clic */
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+	transform: scale(0.98); /* Botón ligeramente más pequeño */
+}
+.btn-registrar-prov{
+	text-align: center;
+	background-color: #6c757d; /* Rojo para cancelar */
+	color: white; /* Color del texto */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	padding: 10px 20px; /* Espaciado interno */
+	font-size: 16px; /* Tamaño de fuente */
+	font-family: 'Arial', sans-serif; /* Fuente legible */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+	transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+.btn-registrar-prov:hover{
+	background-color: #5a6268; /* Rojo más oscuro */
+	box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+.btn-registrar-prov:active{
+	background-color: #4e555b; /* Color aún más oscuro al hacer clic */
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+	transform: scale(0.98); /* Botón ligeramente más pequeño */
+}
 @media (min-width: 1200px) {
     #cd-timeline {
         margin-top: 3em;
