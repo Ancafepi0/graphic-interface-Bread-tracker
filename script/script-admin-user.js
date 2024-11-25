@@ -50,7 +50,7 @@ const users = [
             <img src="${user.profileImage}" alt="${user.name}">
           </div>
         </div>
-        <a href="/html/home.html" class="btn-1">INICIAR SESION</a>
+        <a href="/html/add_materia.html" class="btn-1">INICIAR SESION</a>
       `;
   
       // Agregar la tarjeta al contenedor principal

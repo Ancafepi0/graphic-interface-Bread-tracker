@@ -92,7 +92,7 @@ body, html{
 .dashboard-sideBar{
 	left: 0;
 	z-index: 2;
-	background-image: url('/imagenes/img/sideBar-font.jpg');
+	background-image: url('/imagenes/img/fondo_navidad.jpeg');
 	border-right: 1px solid rgba(255, 255, 255, .4);
 	overflow: hidden;
 }
@@ -578,6 +578,18 @@ body, html{
 	background-color: #4e555b; /* Color aún más oscuro al hacer clic */
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
 	transform: scale(0.98); /* Botón ligeramente más pequeño */
+}
+.notificaciones{
+	border-radius: 50%; /* Hace que los bordes sean redondeados, formando un círculo */
+	object-fit: cover; /* Hace que la imagen se ajuste sin deformarse */
+}
+.boton-general{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 0.5em;
+    padding: 20px; /* Espaciado interno */
 }
 @media (min-width: 1200px) {
     #cd-timeline {
