@@ -559,7 +559,7 @@ body, html{
 }
 .btn-registrar-prov{
 	text-align: center;
-	background-color: #6c757d; /* Rojo para cancelar */
+	background-color: #00A69C; /* Rojo para cancelar */
 	color: white; /* Color del texto */
 	border: none; /* Sin borde */
 	border-radius: 5px; /* Bordes redondeados */
@@ -569,9 +569,10 @@ body, html{
 	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
 	transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+	
 }
 .btn-registrar-prov:hover{
-	background-color: #5a6268; /* Rojo más oscuro */
+	background-color: #4e555b; /* Rojo más oscuro */
 	box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 .btn-registrar-prov:active{
@@ -590,6 +591,59 @@ body, html{
 	margin-top: 1%;
 	margin-bottom: 0.5em;
     padding: 20px; /* Espaciado interno */
+}
+.icono-filtro{
+	font-size: 25px;                      /* Tamaño del icono */
+	color: #00A69C;                       /* Color del icono */
+	background-color: #f0f0f0;            /* Fondo claro */
+	border-radius: 50%;                   /* Fondo redondeado */
+	padding: 10px;                        /* Espaciado interno */
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+	transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;  /* Transiciones suaves */
+	cursor: pointer;                     /* Indicar que es interactivo */
+}
+.icono-filtro:hover {
+	transform: scale(1.1);                /* Escala el icono al pasar el ratón */
+  	color: #4e555b;                       /* Cambia el color al pasar el ratón */
+ 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra */	
+}
+.filtro {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;  /* Ajusta la posición según lo necesites */
+    left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Asegúrate de que el filtro quede por encima de otros elementos */
+}
+#menu-filtro:focus + .filtro, .icono-filtro:active + .filtro {
+    display: block;
+}
+.contenido-filtro p,
+.contenido-filtro a {
+    display: inline-block;
+    margin-right: 10px; /* Espaciado entre el párrafo y el enlace */
+}
+.linea-filtro {
+    border: none;           /* Elimina cualquier borde predeterminado */
+    border-top: 2px solid #ccc;  /* Establece un borde superior */
+    margin: 20px 0;          /* Añade un espacio alrededor de la línea */
+}
+.contenido-filtro-filtrado button {
+    margin-right: 5px;
+    background-color: #00A69C;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contenido-filtro-filtrado button:hover {
+    background-color: #4e555b;
 }
 @media (min-width: 1200px) {
     #cd-timeline {
